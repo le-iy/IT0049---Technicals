@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --peach: #f4d1be;
+    --cream: #f5e8d5;
+    --pink: #e5b2d4;
+    --lavender: #cab4ed;
+    --blue: #aec8f0;
+    --text: #302b32;
+    --white: #fffaf5;
+    --border: #e6dcd2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 24px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: var(--peach);
+    color: var(--text);
+}
+
+.dashboard {
+    max-width: 1200px;
+    min-height: 85vh;
+    margin: 0 auto;
+    background: var(--cream);
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(76, 48, 40, 0.10);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 32px;
+    background: var(--white);
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav-links a {
+    padding: 12px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    transition: background 0.2s;
+}
+
+.nav-links a:hover {
+    background: var(--lavender);
+}
+
+.nav-label {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: var(--pink);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.content {
+    padding: 40px 36px;
+    min-height: 65vh;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.page-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #645b60;
+    margin-bottom: 28px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 28px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    border-radius: 20px;
+    padding: 28px;
+    min-height: 180px;
+    color: var(--text);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.feature-card h2 {
+    margin-top: 35px;
+    margin-bottom: 8px;
+    font-size: 21px;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.pink {
+    background: var(--pink);
+}
+
+.lavender {
+    background: var(--lavender);
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.peach {
+    background: var(--peach);
+}
+
+.table-container {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 16px;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data-table th {
+    background: var(--lavender);
+    padding: 17px 20px;
+    font-size: 13px;
+}
+
+.data-table td {
+    padding: 17px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+}
+
+.data-table tbody tr:hover {
+    background: #f9eef5;
+}
+
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.role-badge {
+    display: inline-block;
+    background: var(--blue);
+    border-radius: 20px;
+    padding: 7px 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #73696a;
+}
