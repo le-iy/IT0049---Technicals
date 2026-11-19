@@ -1,7 +1,7 @@
     </main>
 
     <footer class="footer">
-        <p>Caabay - Technical 5</p>
+        <p>Caabay - Technical 6</p>
     </footer>
 
 </div>
